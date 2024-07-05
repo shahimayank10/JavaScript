@@ -3,6 +3,7 @@
 // console.log(name);   output: mayank(no change) strings are immutable
 
 // const newname= new String("mayank");  
+// console.log(typeof(newname));   output:Object
 
 
 // methods in String
