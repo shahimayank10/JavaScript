@@ -21,3 +21,13 @@ const merge= Object.assign({},user1,user2)
 
 
 console.log(merge);
+
+console.log(Object.keys(merge));    
+   //[ 'name1', 'email1', 'age1', 'name2', 'email2', 'age2' ]
+
+console.log(Object.values(merge));  //print values
+
+console.log(Object.entries(merge));  //print each property in array
+                                     // [ 'name1', 'mayank' ]
+
+
