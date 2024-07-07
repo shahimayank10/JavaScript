@@ -6,6 +6,8 @@ console.log(Array.isArray(arr));  //true
 
 console.log(Array.from("mayank")); //[ 'm', 'a', 'y', 'a', 'n', 'k' ]
 
+console.log(Array.of('key', 2, true))  //[ 'key', 2, true ]
+
 const name=[ 'm', 'a', 'y', 'a', 'n', 'k' ]
 
 console.log(name.join(''));   //mayank
