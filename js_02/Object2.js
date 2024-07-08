@@ -30,4 +30,14 @@ console.log(Object.values(merge));  //print values
 console.log(Object.entries(merge));  //print each property in array
                                      // [ 'name1', 'mayank' ]
 
+// object de-structuring
 
+const cource={
+    id:222,
+    courceinstructor:"Hitesh",
+    topic:"MERN"
+}
+
+const {topic : heading}=cource;
+// console.log(topic);
+console.log(heading);
