@@ -29,18 +29,19 @@ const data=[
 	}
 ];
 
-// const obj = {
-//     "property1": "value1", 
-//     "property2": "value2", 
-//     "property": 9, 
-//   };
+const obj = {
+    "property1": "value1", 
+    "property2": "value2", 
+    "property": 9, 
+  };
 
-for(let d in data){
+for(let d in obj){
     console.log(d);
+	console.log(obj[d]);
 }
 
 for(let d of data){
-    console.log(d);
+    console.log(d);   
 }
 
 
