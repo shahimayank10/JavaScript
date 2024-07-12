@@ -32,8 +32,8 @@ console.log(add3(2,3));
 
 (function hi(){
   console.log("hi");
-})();
+})();                                 //named IIFE
 
-( ()=>{
-  console.log("hello");
-} )();
+( (name)=>{
+  console.log(`hello ${name}`);
+} )("mayank");
