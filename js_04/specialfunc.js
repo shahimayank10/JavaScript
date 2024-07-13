@@ -28,9 +28,9 @@ console.log(newarr2);
 
 const arr3=[2,3,4,5]
 
-const sum= arr3.reduce((acc,curr)=>{
-     return acc+curr;
-    },1);
+const sum= arr3.reduce((acc,curr)=>{ 
+    return acc+curr;
+},1);
 console.log(sum);
 
 
