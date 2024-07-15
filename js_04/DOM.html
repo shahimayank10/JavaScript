@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parents">
+        <div class="days">Monday</div>
+        <div class="days">tuesday</div>
+        <div class="days">wednesday</div>
+        <div class="days">thrusday</div>
+    </div>
+    <script>
+        const doc=document.querySelector(".parents")
+        // console.log(doc);
+        // console.log(doc.children);           //htmlcollection
+        // console.log(doc.childNodes);           //nodelist {complex tree  
+                                                            //  structure contain br also}
+
+
+        // for(let i=0;i<doc.children.length;i++){
+        //     console.log(doc.children[i].innerHTML);
+        // }
+
+        doc.children[1].style.color="orange";
+
+        console.log(doc.firstElementChild);
+        console.log(doc.lastElementChild);
+        
+        const day=document.querySelector(".days");
+        
+        console.log(day);
+        console.log(day.parentElement);
+        console.log(day.nextElementSibling);
+        console.log(day.nextSibling);
+        
+        
+
+    </script>
+</body>
+</html>
