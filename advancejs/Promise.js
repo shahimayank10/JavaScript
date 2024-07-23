@@ -39,35 +39,88 @@
 
 // Chaining
 
-const promisefour= new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        const error=true;
-        if(!error){
-            console.log("4th promise");
-            resolve({name:"Mayank" , email:"shahimayank10@gmail.com"});
-        }   
-        else{
-            reject("ERROR:somthing went wrong");
-        }   
-    },3000);
-})
+// const promisefour= new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         const error=true;
+//         if(!error){
+//             console.log("4th promise");
+//             resolve({name:"Mayank" , email:"shahimayank10@gmail.com"});
+//         }   
+//         else{
+//             reject("ERROR:somthing went wrong");
+//         }   
+//     },3000);
+// })
 
-promisefour
-.then((res)=>{
-    console.log(res);
-    return res.email;
-})
-.then((res)=>{
-    console.log(res);           //mail as it is return in above function
-})
-.catch((rej)=>{
-   console.log(rej);
-})
-.finally(()=>{
-    console.log("promise either resolved or rejected");
-})
+// promisefour
+// .then((res)=>{
+//     console.log(res);
+//     return res.email;
+// })
+// .then((res)=>{
+//     console.log(res);           //mail as it is return in above function
+// })
+// .catch((rej)=>{
+//    console.log(rej);
+// })
+// .finally(()=>{
+//     console.log("promise either resolved or rejected");
+// })
 
+// =================================================
+// -------------async-await method-------------------
+// =================================================
 
+// const promisefive= new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         const error=false;
+//         if(!error){
+//             console.log("5th promise");
+//             resolve({name:"Mayank" , email:"shahimayank10@gmail.com"});
+//         }   
+//         else{
+//             reject("ERROR:somthing went wrong");
+//         }   
+//     },3000);
+// });
 
+// async function consumepromisefive(){
+//     try {
+//         const response= await promisefive
+//         console.log(response);
+//     } catch (error) {
+//         console.log(error);
+//     }
+//     }
+    
+//     consumepromisefive();
+
+// ------------------------------------------
+
+// async function apifetch(){
+// try {
+//     const response= await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data= await response.json();
+//     console.log(data);
+// } catch (error) {
+//     console.log(error);
+// }
+// }
+
+// apifetch();
+
+// ---------------------------------------
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((respone)=>{
+    const data=respone.json();
+    return data;
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((err)=>{
+    console.log(err);
+})
 
 
