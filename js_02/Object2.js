@@ -41,3 +41,11 @@ const cource={
 const {topic : heading}=cource;
 // console.log(topic);
 console.log(heading);
+
+const obj={
+    name:"mayank",
+    age:6,
+}
+
+const o = new Object(obj);
+console.log(o);
