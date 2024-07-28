@@ -1,25 +1,31 @@
-// function multiply(num){
-// return num*6;
-// }
+const superhero=["captain america", "iron man","Dr. strange"];
 
-// // console.log(multiply.prototype);             output:{}
+const superpower={
+    capatain:"all abilities",
+    ironman:"fly",
+    drstrange:"time travel",
 
-// function user(name,age){
-//     this.name=name;
-//     this.age=age;
-// }
+    getcaptainpower: function(){
+    console.log(this.capatain);
+    console.log(this);
+    }
+
+}
+
+Object.prototype.mayank=function(){      //set prototype in object now it could be 
+    console.log("hi i am mayank");       //access by array,string,func and object
+}
+
+// console.log(superpower.mayank());
+// console.log(superhero.mayank());
+
+Array.prototype.prateek=function(){       //only access by array
+    console.log("hi i am prateek");
+}
 
 
-// user.prototype.print=function(){
-//     console.log(`age of ${this.name} is ${this.age} `);
-//     // return `age of ${this.name} is ${this.age} `;
-// }
+console.log(superhero.prateek());
 
-// const userone=new user("mayank",21)
-// const usertwo=new user("prateek",21)
-
-// console.log(userone.print());
-// console.log(multiply.prototype);  
 
 
 const engine={
@@ -28,12 +34,15 @@ const engine={
 }
 
 const audiR8={
-    color:"yellow"
+    color:"yellow",
+    // __proto__:engine
 }
 
 console.log(audiR8.color)
 
 audiR8.__proto__=engine;
+// modern syntax 
+// Object.getPrototypeOf(audiR8 , engine)
 
 console.log(audiR8.horcepower)  
 console.log(audiR8.topspeed)  
